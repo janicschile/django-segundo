@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HORA NACIONAL</title>
+        {% load static %}
+        <link rel="stylesheet" href="static/css/style.css">
+        <style>
+            /* mis estilos */
+        </style>
+
+    </head>
+    <body>
+        
+        <h2> {{date}} </h2>
+        <h2> {{time}} </h2>
+        <h1 id="titulo"></h1>
+        <h1 id="titulo"></h1>
+
+        <div class="wrap">
+            <div class="widget">
+                <div class="fecha">
+                    <p id="diaSemana" class="diaSemana"></p>
+                    <p id="dia" class="dia"></p>
+                    <p>de </p>
+                    <p id="mes" class="mes"></p>
+                    <p>del </p>
+                    <p id="year" class="year"></p>
+                </div>
+                <div class="reloj">
+                    <span id="horas" class="horas"></span>
+                    <span>:</span>
+                    <span id="minutos" class="minutos"></span>
+                    <span>:</span>
+                    <span id="segundos" class="segundos"></span>
+                </div>
+            </div>
+        </div>
+    <script  src="static/js/script.js"></script>
+        <!-- DESDE ACA SOLO SCRIPT -->
+        <script>
+            // TU CODIGO:
+        </script>
+    </body>
+</html>
