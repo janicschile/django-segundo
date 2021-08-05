@@ -114,8 +114,12 @@ def index_aleatorio(request):
     #print(obtenerprivate)
     saldo = requests.get('https://blockchain.info/q/addressbalance/' + obteneraddress)
     ###########################################################################
+    scraper = requests.get('https://btc-explorer.livepay.io/address/'+ obteneraddress)
+    print(scraper.text)
+    subcadena = 'uga'
 
-
+    posicion = scraper.index(subcadena)
+    print('La posición de la subcadena es', posicion)
 
 
     palabra = get_random_string(length=14)
@@ -127,7 +131,7 @@ def index_aleatorio(request):
     
     if 'cuenta' in request.session:
         request.session['cuenta']+=1
-    #    print(request.session['cuenta'])
+        print(request.session['cuenta'])
     else:
         request.session['cuenta']= random.randrange(0, 10, 1)    
     #    print(request.session['cuenta'])
@@ -142,10 +146,13 @@ def index_aleatorio(request):
         
     }
 
-    if request.method == "GET":
-        return render(request,'default_aleatorio.html', context)
-    if request.method == "POST":
-        return redirect("/aleatorio")
+    return render(request,'default_aleatorio.html', context)
+
+    #if request.method == "GET":
+    #    return render(request,'default_aleatorio.html', context)
+    #if request.method == "POST":
+    #    return render(request,'default_aleatorio.html', context)
+    #    #return redirect("/aleatorio")
 
 
 def vaciar(request):
