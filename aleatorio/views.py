@@ -114,16 +114,15 @@ def index_aleatorio(request):
     #print(obtenerprivate)
     saldo = requests.get('https://blockchain.info/q/addressbalance/' + obteneraddress)
     ###########################################################################
-    scraper = requests.get('https://btc-explorer.livepay.io/address/'+ obteneraddress)
-    print(scraper.text)
-    subcadena = 'uga'
+    #scraper = requests.get('https://btc-explorer.livepay.io/address/'+ obteneraddress)
+    #print(scraper.text)
+    #subcadena = 'uga'
 
-    posicion = scraper.index(subcadena)
-    print('La posición de la subcadena es', posicion)
+    #posicion = scraper.index(subcadena)
+    #print('La posición de la subcadena es', posicion)
 
 
     palabra = get_random_string(length=14)
-    
     md5 = hashlib.md5(palabra.encode())
     #print(palabra)
     #print(md5.hexdigest())
