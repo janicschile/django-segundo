@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Google+Sans');
+/*--------------*/
+
+* {
+	margin: 0;
+	padding: ;
+	border-box: 0;
+}
+
+body {
+	background: url(https://ugc.kn3.net/i/origin/http://gameranx.com/wp-content/uploads/2016/03/Firewatch-4K-Wallpaper-1.jpg);
+	/*font-size: 36px;*/
+	color: #fff;
+  
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;  
+}
+
+.widget {
+/* 	width: 600px; */
+	margin: 25px;
+}
+
+.widget p {
+	display: inline; 
+  position: relative;
+}
+
+.fecha {
+	font-family: 'Google Sans', sans-serif;
+	text-align: center;
+	font-size: 2em;
+	padding: 20px;
+	width: 100%;
+	background: rgb(0, 0, 0, .7);
+	margin-bottom: 5px;
+  box-sizing: border-box;
+  border-radius: 25px 25px 0 0
+}
+
+.reloj {
+	font-family: 'Google Sans';
+	text-align: center;
+	font-size: 4.5em;
+	padding: 20px;
+	width: 100%;
+	background: rgb(0, 0, 0, .7);
+  box-sizing: border-box;
+  border-radius: 0 0 25px 25px
+}
+
+/* .reloj .caja-segundos {
+	display: inline-block;
+} */

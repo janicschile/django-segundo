@@ -6,10 +6,10 @@ def root(request):
     return redirect ("/")
 
 
-def index(request):
+def index_app(request):
     print(timezone.now())
     context = {
         "date": strftime("%A, %d de %B del %Y", localtime()),
         "time": strftime("%X", localtime()),
     }
-    return render(request,'index.html', context)
+    return render(request,'default_app.html', context)
