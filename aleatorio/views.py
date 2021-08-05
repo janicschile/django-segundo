@@ -116,9 +116,10 @@ def index_aleatorio(request):
     ###########################################################################
     #scraper = requests.get('https://btc-explorer.livepay.io/address/'+ obteneraddress)
     #print(scraper.text)
-    #subcadena = 'uga'
+    #cadena = str(scraper.text)
+    #subcadena = '<tr><td>Final Balance</td><td class="data">' #la subcadena que queremos localizar
 
-    #posicion = scraper.index(subcadena)
+    #posicion = cadena.index(subcadena)
     #print('La posición de la subcadena es', posicion)
 
 
